@@ -1,6 +1,12 @@
 const express=require('express');
 const port=8000;
 const app=express();
+const expressLayouts=require('express-ejs-layouts');
+
+app.use(express.static('./assests'));
+app.use(expressLayouts);
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
 
 app.use('/', require('./routes'));
 app.set('view engine', 'ejs');
