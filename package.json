@@ -1,0 +1,15 @@
+{
+  "name": "chatting-engine",
+  "version": "1.0.0",
+  "description": "Creating a chat web application for users",
+  "main": "index.js",
+  "scripts": {
+    "start":"modemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhilesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
